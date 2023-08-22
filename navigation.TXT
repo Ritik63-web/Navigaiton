@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Navigation Bar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-image: url(black-panther.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(47, 48, 50, 0.593);
+                padding: 0px 20px 0px 20px;
+                height: fit-content;
+            }
+            .logo a{
+                text-decoration: none;
+                color: rgb(171, 153, 218);
+                font-size: 30px;
+                font-family: cursive;
+            }
+            .nav-bar li{
+                list-style-type: none;
+            }
+            li {
+                display: inline-block;
+                margin-right: 25px;
+            }
+            li a{
+                text-decoration: none;
+                text-transform: capitalize;
+                color: white;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a::after{
+                content: "";
+                height: 4px;
+                width: 100%;
+                display: block;
+                background-color: rgb(44, 44, 46);
+                transform: scale(0);
+                transition: transform 0.3s ease;
+                transform-origin: left;
+                bottom: 0px;
+                border-radius: 3px;
+            }
+            a:hover::after{
+                transform: scale(1);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="logo"><a href="#">Logo</a></div>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">contact Us</a></li>
+                <li><a href="">SignUP | Login</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
